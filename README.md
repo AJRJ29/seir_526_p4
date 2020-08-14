@@ -11,7 +11,7 @@
 - As a user, I want to be able delete messages
 
 ## Wireframes
-[alt text](http://url/to/wireframe.png)
+![](wireframe.png)
 
 ## Tech Stack
 - React Native
