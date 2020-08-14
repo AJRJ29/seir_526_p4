@@ -5,7 +5,6 @@
 
 
 ## User Experience
-- As a user, I want to be able to create a profile
 - As a user, I want to be able to send a message
 - As a user, I want to be able to reply to a to a message
 - As a user, I want to be able delete messages
@@ -20,14 +19,15 @@
 
 ## MVP
 - Users will be able to:
-    - [ ] Login/Signup 
-    - [ ] Have a profile page 
     - [ ] Send message 
     - [ ] Delete message
 
 
 ## Stretch Goals
 - User will be able to:
+  - [ ] Create a backend and a database
+  - [ ] Create a profile
+    - [ ] LogIn/SignUp
   - [ ] Create group chats
     - [ ] delete group chat
     - [ ] edit group chat
