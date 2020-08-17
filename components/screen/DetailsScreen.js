@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, View, TextInput, StyleSheet } from 'react-native';
+import { Button, Text, SafeAreaView, TextInput, StyleSheet, View } from 'react-native';
 
 export default function DetailsScreen() {
   const [messages, setMessages] = useState('')
@@ -16,12 +16,9 @@ export default function DetailsScreen() {
 
   return (
     <>
-    <View>
       {mapMessages}
-    </View> 
     <View style={styles.view}>
-      <TextInput style={styles.input} value={messages} onChangeText={setMessages}></TextInput>
-      <Button onPress={messageSubmit} title="submit"/>
+      <TextInput style={styles.input} value={messages} onSubmitEditing={messageSubmit} onChangeText={setMessages}></TextInput>
     </View>
     </>
   );
@@ -32,9 +29,10 @@ const styles = StyleSheet.create({
     height: 50,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: "#BAB7C3",
-    borderRadius: 30,
+    borderBottomColor: 'transparent',
     paddingHorizontal: 16,
     color: "#514E5A",
+    marginBottom: 40 
   },
   view: {
     flex: 1, 
@@ -42,14 +40,14 @@ const styles = StyleSheet.create({
   },
   chat: {
     height: 'auto',
-    width: 'auto',
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: "#BAB7C3",
-    borderRadius: 30,
+    borderRadius: 10,
     paddingHorizontal: 16,
     color: "#514E5A",
     margin: 10,
     justifyContent: "center",
-    padding: 10
+    padding: 20,
+    backgroundColor: 'white'
   },
 })
