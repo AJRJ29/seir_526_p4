@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Button, Text, View, StyleSheet } from 'react-native';
 
 let names = [
-  'Aaron', 'Jonjon', 'Rj', 'Salman', 'Nick', 'Zack', 'NickQ', 'Erick',
+  'Salman', 'Nick', 'Zack', 'NickQ', 'Erick',
 ]
 
-export default function HomeScreen({ navigation }) {
+export default function NotificationScreen({ navigation }) {
   return (
     names.map(name => {
       return (
