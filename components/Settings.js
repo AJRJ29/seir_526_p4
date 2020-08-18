@@ -12,14 +12,14 @@ export default function Settings() {
       <SettingStack.Screen 
       options={{
         headerStyle: {
-          backgroundColor: '#f4511e',
+          backgroundColor: '#20B2AA',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
       }} 
-      name="Notification" 
+      name="Settings" 
       component={SettingScreen} />
     </SettingStack.Navigator>
   );

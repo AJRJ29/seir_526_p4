@@ -12,7 +12,7 @@ export default function Notification() {
       <NotifyStack.Screen 
       options={{
         headerStyle: {
-          backgroundColor: '#f4511e',
+          backgroundColor: '#20B2AA',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {

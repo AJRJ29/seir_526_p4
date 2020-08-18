@@ -3,6 +3,7 @@ import { createStackNavigator, DefaultTheme } from '@react-navigation/stack';
 
 import HomeScreen from './screen/HomeScreen'
 import DetailsScreen from './screen/DetailsScreen'
+import ContactSettingScreen from './screen/ContactSettingScreen'
 
 const HomeStack = createStackNavigator();
 
@@ -12,7 +13,7 @@ export default function HomeStackScreen() {
       <HomeStack.Screen 
       options={{
         headerStyle: {
-          backgroundColor: '#f4511e',
+          backgroundColor: '#20B2AA',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
@@ -24,7 +25,7 @@ export default function HomeStackScreen() {
       <HomeStack.Screen
         options={{
           headerStyle: {
-            backgroundColor: '#f4511e',
+            backgroundColor: '#20B2AA',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -33,19 +34,18 @@ export default function HomeStackScreen() {
         }} 
        name="Chat" 
        component={DetailsScreen} />
+      <HomeStack.Screen 
+      options={{
+        headerStyle: {
+          backgroundColor: '#20B2AA',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} 
+      name="ContactSettings" 
+      component={ContactSettingScreen} />
     </HomeStack.Navigator>
   );
 }
-
-// const MyTheme = {
-//   ...DefaultTheme,
-//   colors: {
-//     ...DefaultTheme.colors,
-//     primary: 'rgb(255, 45, 85)',
-//     background: 'rgb(242, 242, 242)',
-//     card: 'rgb(255, 255, 255)',
-//     text: 'rgb(28, 28, 30)',
-//     border: 'rgb(199, 199, 204)',
-//     notification: 'rgb(255, 69, 58)',
-//   },
-// };
